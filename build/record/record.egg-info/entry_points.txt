@@ -1,3 +1,0 @@
-[console_scripts]
-record_node = record.record_node:main
-

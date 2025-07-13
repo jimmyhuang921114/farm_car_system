@@ -1,9 +1,0 @@
-[console_scripts]
-2Dvisual = track.2Dvisual:main
-byte_old = track.byte_old:main
-bytetrack = track.bytetrack:main
-depth_calculate_person = track.depth_calculate_person:main
-open_rs = track.open_rs:main
-test = track.test:main
-track_point_sub = track.track_point_sub:main
-
