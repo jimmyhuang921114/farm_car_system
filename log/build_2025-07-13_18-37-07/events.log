@@ -1,0 +1,569 @@
+[0.000000] (-) TimerEvent: {}
+[0.000441] (obs_filiter) JobQueued: {'identifier': 'obs_filiter', 'dependencies': OrderedDict()}
+[0.000470] (realsense) JobQueued: {'identifier': 'realsense', 'dependencies': OrderedDict()}
+[0.000489] (record) JobQueued: {'identifier': 'record', 'dependencies': OrderedDict()}
+[0.000505] (track) JobQueued: {'identifier': 'track', 'dependencies': OrderedDict()}
+[0.000522] (obs_filiter) JobStarted: {'identifier': 'obs_filiter'}
+[0.003202] (realsense) JobStarted: {'identifier': 'realsense'}
+[0.005697] (record) JobStarted: {'identifier': 'record'}
+[0.007880] (track) JobStarted: {'identifier': 'track'}
+[0.010304] (obs_filiter) JobProgress: {'identifier': 'obs_filiter', 'progress': 'cmake'}
+[0.010544] (obs_filiter) Command: {'cmd': ['/usr/bin/cmake', '/workspace/farm_car_system/src/obs_filiter', '-DCMAKE_INSTALL_PREFIX=/workspace/farm_car_system/install/obs_filiter'], 'cwd': '/workspace/farm_car_system/build/obs_filiter', 'env': OrderedDict([('LIBRARY_PATH', '/usr/local/cuda/lib64/stubs'), ('NV_LIBCUBLAS_VERSION', '12.1.0.26-1'), ('NV_NVPROF_DEV_PACKAGE', 'cuda-nvprof-12-1=12.1.55-1'), ('NV_CUDA_COMPAT_PACKAGE', 'cuda-compat-12-1'), ('NV_CUDA_NSIGHT_COMPUTE_VERSION', '12.1.0-1'), ('HOSTNAME', 'darkdemon-ASUS-TUF-Gaming-F17-FX707ZC4-FX707ZC4'), ('NVIDIA_CUDA_END_OF_LIFE', '1'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('NV_LIBNCCL_PACKAGE_VERSION', '2.17.1-1'), ('HOME', '/home/work'), ('OLDPWD', '/workspace'), ('NV_CUDNN_PACKAGE_NAME', 'libcudnn8'), ('NV_LIBCUBLAS_DEV_VERSION', '12.1.0.26-1'), ('ROS_PYTHON_VERSION', '3'), ('NV_LIBNCCL_DEV_PACKAGE_VERSION', '2.17.1-1'), ('NV_LIBNPP_PACKAGE', 'libnpp-12-1=12.0.2.50-1'), ('NV_CUDNN_PACKAGE', 'libcudnn8=8.9.0.131-1+cuda12.1'), ('CUDA_VERSION', '12.1.0'), ('NV_NVPROF_VERSION', '12.1.55-1'), ('ROS_DISTRO', 'humble'), ('NV_LIBCUBLAS_PACKAGE_NAME', 'libcublas-12-1'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=12.1 brand=tesla,driver>=470,driver<471 brand=unknown,driver>=470,driver<471 brand=nvidia,driver>=470,driver<471 brand=nvidiartx,driver>=470,driver<471 brand=geforce,driver>=470,driver<471 brand=geforcertx,driver>=470,driver<471 brand=quadro,driver>=470,driver<471 brand=quadrortx,driver>=470,driver<471 brand=titan,driver>=470,driver<471 brand=titanrtx,driver>=470,driver<471 brand=tesla,driver>=525,driver<526 brand=unknown,driver>=525,driver<526 brand=nvidia,driver>=525,driver<526 brand=nvidiartx,driver>=525,driver<526 brand=geforce,driver>=525,driver<526 brand=geforcertx,driver>=525,driver<526 brand=quadro,driver>=525,driver<526 brand=quadrortx,driver>=525,driver<526 brand=titan,driver>=525,driver<526 brand=titanrtx,driver>=525,driver<526'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NV_LIBCUSPARSE_VERSION', '12.0.2.55-1'), ('NVIDIA_DRIVER_CAPABILITIES', 'compute,utility'), ('NV_CUDA_LIB_VERSION', '12.1.0-1'), ('NV_LIBNCCL_PACKAGE_NAME', 'libnccl2'), ('NV_NVML_DEV_VERSION', '12.1.55-1'), ('NV_LIBNPP_DEV_PACKAGE', 'libnpp-dev-12-1=12.0.2.50-1'), ('TERM', 'xterm'), ('NV_CUDA_CUDART_VERSION', '12.1.55-1'), ('NV_CUDNN_PACKAGE_DEV', 'libcudnn8-dev=8.9.0.131-1+cuda12.1'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('NV_LIBCUBLAS_DEV_PACKAGE_NAME', 'libcublas-dev-12-1'), ('NV_LIBCUBLAS_PACKAGE', 'libcublas-12-1=12.1.0.26-1'), ('NVARCH', 'x86_64'), ('NV_LIBNCCL_DEV_PACKAGE_NAME', 'libnccl-dev'), ('NV_LIBCUSPARSE_DEV_VERSION', '12.0.2.55-1'), ('DISPLAY', ':1'), ('NV_LIBNCCL_PACKAGE', 'libnccl2=2.17.1-1+cuda12.1'), ('NVIDIA_PRODUCT_NAME', 'CUDA'), ('LANG', 'C.UTF-8'), ('NV_CUDA_CUDART_DEV_VERSION', '12.1.55-1'), ('XAUTHORITY', '/root/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('NV_LIBCUBLAS_DEV_PACKAGE', 'libcublas-dev-12-1=12.1.0.26-1'), ('NV_CUDA_NSIGHT_COMPUTE_DEV_PACKAGE', 'cuda-nsight-compute-12-1=12.1.0-1'), ('NV_LIBNCCL_DEV_PACKAGE', 'libnccl-dev=2.17.1-1+cuda12.1'), ('NV_NVTX_VERSION', '12.1.66-1'), ('NV_LIBNPP_VERSION', '12.0.2.50-1'), ('NV_CUDNN_VERSION', '8.9.0.131'), ('PWD', '/workspace/farm_car_system/build/obs_filiter'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('NCCL_VERSION', '2.17.1-1'), ('COLCON', '1'), ('NV_LIBNPP_DEV_VERSION', '12.0.2.50-1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.100033] (-) TimerEvent: {}
+[0.200425] (-) TimerEvent: {}
+[0.289359] (obs_filiter) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.289585] (obs_filiter) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.289751] (obs_filiter) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.300508] (-) TimerEvent: {}
+[0.305138] (obs_filiter) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.309455] (obs_filiter) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.309632] (obs_filiter) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.310273] (obs_filiter) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.312857] (obs_filiter) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.370634] (obs_filiter) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.376857] (obs_filiter) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.376991] (obs_filiter) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.377341] (obs_filiter) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.382453] (obs_filiter) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.400759] (-) TimerEvent: {}
+[0.482137] (obs_filiter) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.500889] (-) TimerEvent: {}
+[0.560407] (obs_filiter) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.601123] (-) TimerEvent: {}
+[0.602516] (obs_filiter) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.606340] (obs_filiter) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.614075] (obs_filiter) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.626983] (obs_filiter) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.640948] (record) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/record', 'build', '--build-base', '/workspace/farm_car_system/build/record/build', 'install', '--record', '/workspace/farm_car_system/build/record/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/workspace/farm_car_system/src/record', 'env': {'LIBRARY_PATH': '/usr/local/cuda/lib64/stubs', 'NV_LIBCUBLAS_VERSION': '12.1.0.26-1', 'NV_NVPROF_DEV_PACKAGE': 'cuda-nvprof-12-1=12.1.55-1', 'NV_CUDA_COMPAT_PACKAGE': 'cuda-compat-12-1', 'NV_CUDA_NSIGHT_COMPUTE_VERSION': '12.1.0-1', 'HOSTNAME': 'darkdemon-ASUS-TUF-Gaming-F17-FX707ZC4-FX707ZC4', 'NVIDIA_CUDA_END_OF_LIFE': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64', 'NV_LIBNCCL_PACKAGE_VERSION': '2.17.1-1', 'HOME': '/home/work', 'OLDPWD': '/workspace', 'NV_CUDNN_PACKAGE_NAME': 'libcudnn8', 'NV_LIBCUBLAS_DEV_VERSION': '12.1.0.26-1', 'ROS_PYTHON_VERSION': '3', 'NV_LIBNCCL_DEV_PACKAGE_VERSION': '2.17.1-1', 'NV_LIBNPP_PACKAGE': 'libnpp-12-1=12.0.2.50-1', 'NV_CUDNN_PACKAGE': 'libcudnn8=8.9.0.131-1+cuda12.1', 'CUDA_VERSION': '12.1.0', 'NV_NVPROF_VERSION': '12.1.55-1', 'ROS_DISTRO': 'humble', 'NV_LIBCUBLAS_PACKAGE_NAME': 'libcublas-12-1', 'NVIDIA_REQUIRE_CUDA': 'cuda>=12.1 brand=tesla,driver>=470,driver<471 brand=unknown,driver>=470,driver<471 brand=nvidia,driver>=470,driver<471 brand=nvidiartx,driver>=470,driver<471 brand=geforce,driver>=470,driver<471 brand=geforcertx,driver>=470,driver<471 brand=quadro,driver>=470,driver<471 brand=quadrortx,driver>=470,driver<471 brand=titan,driver>=470,driver<471 brand=titanrtx,driver>=470,driver<471 brand=tesla,driver>=525,driver<526 brand=unknown,driver>=525,driver<526 brand=nvidia,driver>=525,driver<526 brand=nvidiartx,driver>=525,driver<526 brand=geforce,driver>=525,driver<526 brand=geforcertx,driver>=525,driver<526 brand=quadro,driver>=525,driver<526 brand=quadrortx,driver>=525,driver<526 brand=titan,driver>=525,driver<526 brand=titanrtx,driver>=525,driver<526', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NV_LIBCUSPARSE_VERSION': '12.0.2.55-1', 'NVIDIA_DRIVER_CAPABILITIES': 'compute,utility', 'NV_CUDA_LIB_VERSION': '12.1.0-1', 'NV_LIBNCCL_PACKAGE_NAME': 'libnccl2', 'NV_NVML_DEV_VERSION': '12.1.55-1', 'NV_LIBNPP_DEV_PACKAGE': 'libnpp-dev-12-1=12.0.2.50-1', 'TERM': 'xterm', 'NV_CUDA_CUDART_VERSION': '12.1.55-1', 'NV_CUDNN_PACKAGE_DEV': 'libcudnn8-dev=8.9.0.131-1+cuda12.1', 'ROS_LOCALHOST_ONLY': '0', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/humble/bin:/usr/local/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'NV_LIBCUBLAS_DEV_PACKAGE_NAME': 'libcublas-dev-12-1', 'NV_LIBCUBLAS_PACKAGE': 'libcublas-12-1=12.1.0.26-1', 'NVARCH': 'x86_64', 'NV_LIBNCCL_DEV_PACKAGE_NAME': 'libnccl-dev', 'NV_LIBCUSPARSE_DEV_VERSION': '12.0.2.55-1', 'DISPLAY': ':1', 'NV_LIBNCCL_PACKAGE': 'libnccl2=2.17.1-1+cuda12.1', 'NVIDIA_PRODUCT_NAME': 'CUDA', 'LANG': 'C.UTF-8', 'NV_CUDA_CUDART_DEV_VERSION': '12.1.55-1', 'XAUTHORITY': '/root/.Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'DEBIAN_FRONTEND': 'noninteractive', 'NV_LIBCUBLAS_DEV_PACKAGE': 'libcublas-dev-12-1=12.1.0.26-1', 'NV_CUDA_NSIGHT_COMPUTE_DEV_PACKAGE': 'cuda-nsight-compute-12-1=12.1.0-1', 'NV_LIBNCCL_DEV_PACKAGE': 'libnccl-dev=2.17.1-1+cuda12.1', 'NV_NVTX_VERSION': '12.1.66-1', 'NV_LIBNPP_VERSION': '12.0.2.50-1', 'NV_CUDNN_VERSION': '8.9.0.131', 'PWD': '/workspace/farm_car_system/build/record', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/workspace/farm_car_system/build/record/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/farm_car_system/install/record/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'NCCL_VERSION': '2.17.1-1', 'COLCON': '1', 'NV_LIBNPP_DEV_VERSION': '12.0.2.50-1'}, 'shell': False}
+[0.642771] (obs_filiter) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.642827] (realsense) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/realsense', 'build', '--build-base', '/workspace/farm_car_system/build/realsense/build', 'install', '--record', '/workspace/farm_car_system/build/realsense/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/workspace/farm_car_system/src/realsense', 'env': {'LIBRARY_PATH': '/usr/local/cuda/lib64/stubs', 'NV_LIBCUBLAS_VERSION': '12.1.0.26-1', 'NV_NVPROF_DEV_PACKAGE': 'cuda-nvprof-12-1=12.1.55-1', 'NV_CUDA_COMPAT_PACKAGE': 'cuda-compat-12-1', 'NV_CUDA_NSIGHT_COMPUTE_VERSION': '12.1.0-1', 'HOSTNAME': 'darkdemon-ASUS-TUF-Gaming-F17-FX707ZC4-FX707ZC4', 'NVIDIA_CUDA_END_OF_LIFE': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64', 'NV_LIBNCCL_PACKAGE_VERSION': '2.17.1-1', 'HOME': '/home/work', 'OLDPWD': '/workspace', 'NV_CUDNN_PACKAGE_NAME': 'libcudnn8', 'NV_LIBCUBLAS_DEV_VERSION': '12.1.0.26-1', 'ROS_PYTHON_VERSION': '3', 'NV_LIBNCCL_DEV_PACKAGE_VERSION': '2.17.1-1', 'NV_LIBNPP_PACKAGE': 'libnpp-12-1=12.0.2.50-1', 'NV_CUDNN_PACKAGE': 'libcudnn8=8.9.0.131-1+cuda12.1', 'CUDA_VERSION': '12.1.0', 'NV_NVPROF_VERSION': '12.1.55-1', 'ROS_DISTRO': 'humble', 'NV_LIBCUBLAS_PACKAGE_NAME': 'libcublas-12-1', 'NVIDIA_REQUIRE_CUDA': 'cuda>=12.1 brand=tesla,driver>=470,driver<471 brand=unknown,driver>=470,driver<471 brand=nvidia,driver>=470,driver<471 brand=nvidiartx,driver>=470,driver<471 brand=geforce,driver>=470,driver<471 brand=geforcertx,driver>=470,driver<471 brand=quadro,driver>=470,driver<471 brand=quadrortx,driver>=470,driver<471 brand=titan,driver>=470,driver<471 brand=titanrtx,driver>=470,driver<471 brand=tesla,driver>=525,driver<526 brand=unknown,driver>=525,driver<526 brand=nvidia,driver>=525,driver<526 brand=nvidiartx,driver>=525,driver<526 brand=geforce,driver>=525,driver<526 brand=geforcertx,driver>=525,driver<526 brand=quadro,driver>=525,driver<526 brand=quadrortx,driver>=525,driver<526 brand=titan,driver>=525,driver<526 brand=titanrtx,driver>=525,driver<526', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NV_LIBCUSPARSE_VERSION': '12.0.2.55-1', 'NVIDIA_DRIVER_CAPABILITIES': 'compute,utility', 'NV_CUDA_LIB_VERSION': '12.1.0-1', 'NV_LIBNCCL_PACKAGE_NAME': 'libnccl2', 'NV_NVML_DEV_VERSION': '12.1.55-1', 'NV_LIBNPP_DEV_PACKAGE': 'libnpp-dev-12-1=12.0.2.50-1', 'TERM': 'xterm', 'NV_CUDA_CUDART_VERSION': '12.1.55-1', 'NV_CUDNN_PACKAGE_DEV': 'libcudnn8-dev=8.9.0.131-1+cuda12.1', 'ROS_LOCALHOST_ONLY': '0', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/humble/bin:/usr/local/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'NV_LIBCUBLAS_DEV_PACKAGE_NAME': 'libcublas-dev-12-1', 'NV_LIBCUBLAS_PACKAGE': 'libcublas-12-1=12.1.0.26-1', 'NVARCH': 'x86_64', 'NV_LIBNCCL_DEV_PACKAGE_NAME': 'libnccl-dev', 'NV_LIBCUSPARSE_DEV_VERSION': '12.0.2.55-1', 'DISPLAY': ':1', 'NV_LIBNCCL_PACKAGE': 'libnccl2=2.17.1-1+cuda12.1', 'NVIDIA_PRODUCT_NAME': 'CUDA', 'LANG': 'C.UTF-8', 'NV_CUDA_CUDART_DEV_VERSION': '12.1.55-1', 'XAUTHORITY': '/root/.Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'DEBIAN_FRONTEND': 'noninteractive', 'NV_LIBCUBLAS_DEV_PACKAGE': 'libcublas-dev-12-1=12.1.0.26-1', 'NV_CUDA_NSIGHT_COMPUTE_DEV_PACKAGE': 'cuda-nsight-compute-12-1=12.1.0-1', 'NV_LIBNCCL_DEV_PACKAGE': 'libnccl-dev=2.17.1-1+cuda12.1', 'NV_NVTX_VERSION': '12.1.66-1', 'NV_LIBNPP_VERSION': '12.0.2.50-1', 'NV_CUDNN_VERSION': '8.9.0.131', 'PWD': '/workspace/farm_car_system/build/realsense', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/workspace/farm_car_system/build/realsense/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/farm_car_system/install/realsense/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'NCCL_VERSION': '2.17.1-1', 'COLCON': '1', 'NV_LIBNPP_DEV_VERSION': '12.0.2.50-1'}, 'shell': False}
+[0.646165] (track) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/track', 'build', '--build-base', '/workspace/farm_car_system/build/track/build', 'install', '--record', '/workspace/farm_car_system/build/track/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/workspace/farm_car_system/src/track', 'env': {'LIBRARY_PATH': '/usr/local/cuda/lib64/stubs', 'NV_LIBCUBLAS_VERSION': '12.1.0.26-1', 'NV_NVPROF_DEV_PACKAGE': 'cuda-nvprof-12-1=12.1.55-1', 'NV_CUDA_COMPAT_PACKAGE': 'cuda-compat-12-1', 'NV_CUDA_NSIGHT_COMPUTE_VERSION': '12.1.0-1', 'HOSTNAME': 'darkdemon-ASUS-TUF-Gaming-F17-FX707ZC4-FX707ZC4', 'NVIDIA_CUDA_END_OF_LIFE': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64', 'NV_LIBNCCL_PACKAGE_VERSION': '2.17.1-1', 'HOME': '/home/work', 'OLDPWD': '/workspace', 'NV_CUDNN_PACKAGE_NAME': 'libcudnn8', 'NV_LIBCUBLAS_DEV_VERSION': '12.1.0.26-1', 'ROS_PYTHON_VERSION': '3', 'NV_LIBNCCL_DEV_PACKAGE_VERSION': '2.17.1-1', 'NV_LIBNPP_PACKAGE': 'libnpp-12-1=12.0.2.50-1', 'NV_CUDNN_PACKAGE': 'libcudnn8=8.9.0.131-1+cuda12.1', 'CUDA_VERSION': '12.1.0', 'NV_NVPROF_VERSION': '12.1.55-1', 'ROS_DISTRO': 'humble', 'NV_LIBCUBLAS_PACKAGE_NAME': 'libcublas-12-1', 'NVIDIA_REQUIRE_CUDA': 'cuda>=12.1 brand=tesla,driver>=470,driver<471 brand=unknown,driver>=470,driver<471 brand=nvidia,driver>=470,driver<471 brand=nvidiartx,driver>=470,driver<471 brand=geforce,driver>=470,driver<471 brand=geforcertx,driver>=470,driver<471 brand=quadro,driver>=470,driver<471 brand=quadrortx,driver>=470,driver<471 brand=titan,driver>=470,driver<471 brand=titanrtx,driver>=470,driver<471 brand=tesla,driver>=525,driver<526 brand=unknown,driver>=525,driver<526 brand=nvidia,driver>=525,driver<526 brand=nvidiartx,driver>=525,driver<526 brand=geforce,driver>=525,driver<526 brand=geforcertx,driver>=525,driver<526 brand=quadro,driver>=525,driver<526 brand=quadrortx,driver>=525,driver<526 brand=titan,driver>=525,driver<526 brand=titanrtx,driver>=525,driver<526', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NV_LIBCUSPARSE_VERSION': '12.0.2.55-1', 'NVIDIA_DRIVER_CAPABILITIES': 'compute,utility', 'NV_CUDA_LIB_VERSION': '12.1.0-1', 'NV_LIBNCCL_PACKAGE_NAME': 'libnccl2', 'NV_NVML_DEV_VERSION': '12.1.55-1', 'NV_LIBNPP_DEV_PACKAGE': 'libnpp-dev-12-1=12.0.2.50-1', 'TERM': 'xterm', 'NV_CUDA_CUDART_VERSION': '12.1.55-1', 'NV_CUDNN_PACKAGE_DEV': 'libcudnn8-dev=8.9.0.131-1+cuda12.1', 'ROS_LOCALHOST_ONLY': '0', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/humble/bin:/usr/local/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'NV_LIBCUBLAS_DEV_PACKAGE_NAME': 'libcublas-dev-12-1', 'NV_LIBCUBLAS_PACKAGE': 'libcublas-12-1=12.1.0.26-1', 'NVARCH': 'x86_64', 'NV_LIBNCCL_DEV_PACKAGE_NAME': 'libnccl-dev', 'NV_LIBCUSPARSE_DEV_VERSION': '12.0.2.55-1', 'DISPLAY': ':1', 'NV_LIBNCCL_PACKAGE': 'libnccl2=2.17.1-1+cuda12.1', 'NVIDIA_PRODUCT_NAME': 'CUDA', 'LANG': 'C.UTF-8', 'NV_CUDA_CUDART_DEV_VERSION': '12.1.55-1', 'XAUTHORITY': '/root/.Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'DEBIAN_FRONTEND': 'noninteractive', 'NV_LIBCUBLAS_DEV_PACKAGE': 'libcublas-dev-12-1=12.1.0.26-1', 'NV_CUDA_NSIGHT_COMPUTE_DEV_PACKAGE': 'cuda-nsight-compute-12-1=12.1.0-1', 'NV_LIBNCCL_DEV_PACKAGE': 'libnccl-dev=2.17.1-1+cuda12.1', 'NV_NVTX_VERSION': '12.1.66-1', 'NV_LIBNPP_VERSION': '12.0.2.50-1', 'NV_CUDNN_VERSION': '8.9.0.131', 'PWD': '/workspace/farm_car_system/build/track', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/workspace/farm_car_system/build/track/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/farm_car_system/install/track/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'NCCL_VERSION': '2.17.1-1', 'COLCON': '1', 'NV_LIBNPP_DEV_VERSION': '12.0.2.50-1'}, 'shell': False}
+[0.679074] (obs_filiter) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.682785] (obs_filiter) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.701213] (-) TimerEvent: {}
+[0.762505] (obs_filiter) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.766687] (record) StdoutLine: {'line': b'running egg_info\n'}
+[0.766896] (record) StdoutLine: {'line': b'creating ../../build/record/record.egg-info\n'}
+[0.767069] (record) StdoutLine: {'line': b'writing ../../build/record/record.egg-info/PKG-INFO\n'}
+[0.767197] (record) StdoutLine: {'line': b'writing dependency_links to ../../build/record/record.egg-info/dependency_links.txt\n'}
+[0.767385] (realsense) StdoutLine: {'line': b'running egg_info\n'}
+[0.767465] (record) StdoutLine: {'line': b'writing entry points to ../../build/record/record.egg-info/entry_points.txt\n'}
+[0.767524] (record) StdoutLine: {'line': b'writing requirements to ../../build/record/record.egg-info/requires.txt\n'}
+[0.767580] (record) StdoutLine: {'line': b'writing top-level names to ../../build/record/record.egg-info/top_level.txt\n'}
+[0.767635] (record) StdoutLine: {'line': b"writing manifest file '../../build/record/record.egg-info/SOURCES.txt'\n"}
+[0.767752] (realsense) StdoutLine: {'line': b'creating ../../build/realsense/realsense.egg-info\n'}
+[0.767811] (realsense) StdoutLine: {'line': b'writing ../../build/realsense/realsense.egg-info/PKG-INFO\n'}
+[0.767918] (realsense) StdoutLine: {'line': b'writing dependency_links to ../../build/realsense/realsense.egg-info/dependency_links.txt\n'}
+[0.768000] (realsense) StdoutLine: {'line': b'writing entry points to ../../build/realsense/realsense.egg-info/entry_points.txt\n'}
+[0.768080] (realsense) StdoutLine: {'line': b'writing requirements to ../../build/realsense/realsense.egg-info/requires.txt\n'}
+[0.768174] (realsense) StdoutLine: {'line': b'writing top-level names to ../../build/realsense/realsense.egg-info/top_level.txt\n'}
+[0.768237] (realsense) StdoutLine: {'line': b"writing manifest file '../../build/realsense/realsense.egg-info/SOURCES.txt'\n"}
+[0.768429] (record) StdoutLine: {'line': b"reading manifest file '../../build/record/record.egg-info/SOURCES.txt'\n"}
+[0.768905] (record) StdoutLine: {'line': b"writing manifest file '../../build/record/record.egg-info/SOURCES.txt'\n"}
+[0.768977] (record) StdoutLine: {'line': b'running build\n'}
+[0.769037] (record) StdoutLine: {'line': b'running build_py\n'}
+[0.769097] (record) StdoutLine: {'line': b'creating /workspace/farm_car_system/build/record/build\n'}
+[0.769180] (record) StdoutLine: {'line': b'creating /workspace/farm_car_system/build/record/build/lib\n'}
+[0.769269] (record) StdoutLine: {'line': b'creating /workspace/farm_car_system/build/record/build/lib/record\n'}
+[0.769328] (record) StdoutLine: {'line': b'copying record/record_node.py -> /workspace/farm_car_system/build/record/build/lib/record\n'}
+[0.769410] (record) StdoutLine: {'line': b'copying record/__init__.py -> /workspace/farm_car_system/build/record/build/lib/record\n'}
+[0.769468] (record) StdoutLine: {'line': b'running install\n'}
+[0.769546] (realsense) StdoutLine: {'line': b"reading manifest file '../../build/realsense/realsense.egg-info/SOURCES.txt'\n"}
+[0.769609] (record) StdoutLine: {'line': b'running install_lib\n'}
+[0.769687] (realsense) StdoutLine: {'line': b"writing manifest file '../../build/realsense/realsense.egg-info/SOURCES.txt'\n"}
+[0.769778] (realsense) StdoutLine: {'line': b'running build\n'}
+[0.769839] (realsense) StdoutLine: {'line': b'running build_py\n'}
+[0.769958] (realsense) StdoutLine: {'line': b'creating /workspace/farm_car_system/build/realsense/build\n'}
+[0.770212] (record) StdoutLine: {'line': b'creating /workspace/farm_car_system/install/record/lib/python3.10/site-packages/record\n'}
+[0.770287] (record) StdoutLine: {'line': b'copying /workspace/farm_car_system/build/record/build/lib/record/record_node.py -> /workspace/farm_car_system/install/record/lib/python3.10/site-packages/record\n'}
+[0.770349] (record) StdoutLine: {'line': b'copying /workspace/farm_car_system/build/record/build/lib/record/__init__.py -> /workspace/farm_car_system/install/record/lib/python3.10/site-packages/record\n'}
+[0.770410] (record) StdoutLine: {'line': b'byte-compiling /workspace/farm_car_system/install/record/lib/python3.10/site-packages/record/record_node.py to record_node.cpython-310.pyc\n'}
+[0.770496] (realsense) StdoutLine: {'line': b'creating /workspace/farm_car_system/build/realsense/build/lib\n'}
+[0.770607] (realsense) StdoutLine: {'line': b'creating /workspace/farm_car_system/build/realsense/build/lib/realsense\n'}
+[0.770665] (realsense) StdoutLine: {'line': b'copying realsense/interface.py -> /workspace/farm_car_system/build/realsense/build/lib/realsense\n'}
+[0.770721] (realsense) StdoutLine: {'line': b'copying realsense/box_edge_detect.py -> /workspace/farm_car_system/build/realsense/build/lib/realsense\n'}
+[0.770781] (realsense) StdoutLine: {'line': b'copying realsense/depth_calculate.py -> /workspace/farm_car_system/build/realsense/build/lib/realsense\n'}
+[0.770841] (realsense) StdoutLine: {'line': b'copying realsense/color_detect.py -> /workspace/farm_car_system/build/realsense/build/lib/realsense\n'}
+[0.770901] (realsense) StdoutLine: {'line': b'copying realsense/__init__.py -> /workspace/farm_car_system/build/realsense/build/lib/realsense\n'}
+[0.770960] (realsense) StdoutLine: {'line': b'copying realsense/take_picture.py -> /workspace/farm_car_system/build/realsense/build/lib/realsense\n'}
+[0.771020] (realsense) StdoutLine: {'line': b'copying realsense/realsense_read.py -> /workspace/farm_car_system/build/realsense/build/lib/realsense\n'}
+[0.771079] (realsense) StdoutLine: {'line': b'copying realsense/2d_plane.py -> /workspace/farm_car_system/build/realsense/build/lib/realsense\n'}
+[0.771138] (realsense) StdoutLine: {'line': b'copying realsense/camera_parameter.py -> /workspace/farm_car_system/build/realsense/build/lib/realsense\n'}
+[0.771231] (realsense) StdoutLine: {'line': b'copying realsense/paddleorc.py -> /workspace/farm_car_system/build/realsense/build/lib/realsense\n'}
+[0.771294] (realsense) StdoutLine: {'line': b'copying realsense/visiual.py -> /workspace/farm_car_system/build/realsense/build/lib/realsense\n'}
+[0.771357] (realsense) StdoutLine: {'line': b'copying realsense/color_range.py -> /workspace/farm_car_system/build/realsense/build/lib/realsense\n'}
+[0.771416] (realsense) StdoutLine: {'line': b'copying realsense/interface_robot.py -> /workspace/farm_car_system/build/realsense/build/lib/realsense\n'}
+[0.771475] (realsense) StdoutLine: {'line': b'running install\n'}
+[0.771534] (realsense) StdoutLine: {'line': b'running install_lib\n'}
+[0.771594] (realsense) StdoutLine: {'line': b'creating /workspace/farm_car_system/install/realsense/lib/python3.10/site-packages/realsense\n'}
+[0.771653] (realsense) StdoutLine: {'line': b'copying /workspace/farm_car_system/build/realsense/build/lib/realsense/interface.py -> /workspace/farm_car_system/install/realsense/lib/python3.10/site-packages/realsense\n'}
+[0.771753] (record) StdoutLine: {'line': b'byte-compiling /workspace/farm_car_system/install/record/lib/python3.10/site-packages/record/__init__.py to __init__.cpython-310.pyc\n'}
+[0.771887] (realsense) StdoutLine: {'line': b'copying /workspace/farm_car_system/build/realsense/build/lib/realsense/box_edge_detect.py -> /workspace/farm_car_system/install/realsense/lib/python3.10/site-packages/realsense\n'}
+[0.771945] (record) StdoutLine: {'line': b'running install_data\n'}
+[0.772001] (record) StdoutLine: {'line': b'creating /workspace/farm_car_system/install/record/share/ament_index\n'}
+[0.772059] (record) StdoutLine: {'line': b'creating /workspace/farm_car_system/install/record/share/ament_index/resource_index\n'}
+[0.772116] (record) StdoutLine: {'line': b'creating /workspace/farm_car_system/install/record/share/ament_index/resource_index/packages\n'}
+[0.772180] (record) StdoutLine: {'line': b'copying resource/record -> /workspace/farm_car_system/install/record/share/ament_index/resource_index/packages\n'}
+[0.772241] (record) StdoutLine: {'line': b'copying package.xml -> /workspace/farm_car_system/install/record/share/record\n'}
+[0.772297] (record) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.772353] (realsense) StdoutLine: {'line': b'copying /workspace/farm_car_system/build/realsense/build/lib/realsense/depth_calculate.py -> /workspace/farm_car_system/install/realsense/lib/python3.10/site-packages/realsense\n'}
+[0.772413] (realsense) StdoutLine: {'line': b'copying /workspace/farm_car_system/build/realsense/build/lib/realsense/color_detect.py -> /workspace/farm_car_system/install/realsense/lib/python3.10/site-packages/realsense\n'}
+[0.772469] (realsense) StdoutLine: {'line': b'copying /workspace/farm_car_system/build/realsense/build/lib/realsense/__init__.py -> /workspace/farm_car_system/install/realsense/lib/python3.10/site-packages/realsense\n'}
+[0.772530] (realsense) StdoutLine: {'line': b'copying /workspace/farm_car_system/build/realsense/build/lib/realsense/take_picture.py -> /workspace/farm_car_system/install/realsense/lib/python3.10/site-packages/realsense\n'}
+[0.772587] (realsense) StdoutLine: {'line': b'copying /workspace/farm_car_system/build/realsense/build/lib/realsense/realsense_read.py -> /workspace/farm_car_system/install/realsense/lib/python3.10/site-packages/realsense\n'}
+[0.772644] (realsense) StdoutLine: {'line': b'copying /workspace/farm_car_system/build/realsense/build/lib/realsense/2d_plane.py -> /workspace/farm_car_system/install/realsense/lib/python3.10/site-packages/realsense\n'}
+[0.772720] (realsense) StdoutLine: {'line': b'copying /workspace/farm_car_system/build/realsense/build/lib/realsense/camera_parameter.py -> /workspace/farm_car_system/install/realsense/lib/python3.10/site-packages/realsense\n'}
+[0.772782] (realsense) StdoutLine: {'line': b'copying /workspace/farm_car_system/build/realsense/build/lib/realsense/paddleorc.py -> /workspace/farm_car_system/install/realsense/lib/python3.10/site-packages/realsense\n'}
+[0.772842] (realsense) StdoutLine: {'line': b'copying /workspace/farm_car_system/build/realsense/build/lib/realsense/visiual.py -> /workspace/farm_car_system/install/realsense/lib/python3.10/site-packages/realsense\n'}
+[0.772929] (realsense) StdoutLine: {'line': b'copying /workspace/farm_car_system/build/realsense/build/lib/realsense/color_range.py -> /workspace/farm_car_system/install/realsense/lib/python3.10/site-packages/realsense\n'}
+[0.772989] (realsense) StdoutLine: {'line': b'copying /workspace/farm_car_system/build/realsense/build/lib/realsense/interface_robot.py -> /workspace/farm_car_system/install/realsense/lib/python3.10/site-packages/realsense\n'}
+[0.773049] (realsense) StdoutLine: {'line': b'byte-compiling /workspace/farm_car_system/install/realsense/lib/python3.10/site-packages/realsense/interface.py to interface.cpython-310.pyc\n'}
+[0.773109] (record) StdoutLine: {'line': b'Copying ../../build/record/record.egg-info to /workspace/farm_car_system/install/record/lib/python3.10/site-packages/record-0.0.0-py3.10.egg-info\n'}
+[0.773245] (realsense) StdoutLine: {'line': b'byte-compiling /workspace/farm_car_system/install/realsense/lib/python3.10/site-packages/realsense/box_edge_detect.py to box_edge_detect.cpython-310.pyc\n'}
+[0.773308] (record) StdoutLine: {'line': b'running install_scripts\n'}
+[0.773366] (track) StdoutLine: {'line': b'running egg_info\n'}
+[0.773453] (realsense) StdoutLine: {'line': b'byte-compiling /workspace/farm_car_system/install/realsense/lib/python3.10/site-packages/realsense/depth_calculate.py to depth_calculate.cpython-310.pyc\n'}
+[0.773515] (track) StdoutLine: {'line': b'creating ../../build/track/track.egg-info\n'}
+[0.773622] (realsense) StdoutLine: {'line': b'byte-compiling /workspace/farm_car_system/install/realsense/lib/python3.10/site-packages/realsense/color_detect.py to color_detect.cpython-310.pyc\n'}
+[0.773713] (track) StdoutLine: {'line': b'writing ../../build/track/track.egg-info/PKG-INFO\n'}
+[0.773808] (track) StdoutLine: {'line': b'writing dependency_links to ../../build/track/track.egg-info/dependency_links.txt\n'}
+[0.773866] (track) StdoutLine: {'line': b'writing entry points to ../../build/track/track.egg-info/entry_points.txt\n'}
+[0.773923] (track) StdoutLine: {'line': b'writing requirements to ../../build/track/track.egg-info/requires.txt\n'}
+[0.773978] (track) StdoutLine: {'line': b'writing top-level names to ../../build/track/track.egg-info/top_level.txt\n'}
+[0.774034] (track) StdoutLine: {'line': b"writing manifest file '../../build/track/track.egg-info/SOURCES.txt'\n"}
+[0.774159] (realsense) StdoutLine: {'line': b'byte-compiling /workspace/farm_car_system/install/realsense/lib/python3.10/site-packages/realsense/__init__.py to __init__.cpython-310.pyc\n'}
+[0.774278] (realsense) StdoutLine: {'line': b'byte-compiling /workspace/farm_car_system/install/realsense/lib/python3.10/site-packages/realsense/take_picture.py to take_picture.cpython-310.pyc\n'}
+[0.774423] (realsense) StdoutLine: {'line': b'byte-compiling /workspace/farm_car_system/install/realsense/lib/python3.10/site-packages/realsense/realsense_read.py to realsense_read.cpython-310.pyc\n'}
+[0.774912] (realsense) StdoutLine: {'line': b'byte-compiling /workspace/farm_car_system/install/realsense/lib/python3.10/site-packages/realsense/2d_plane.py to 2d_plane.cpython-310.pyc\n'}
+[0.775030] (track) StdoutLine: {'line': b"reading manifest file '../../build/track/track.egg-info/SOURCES.txt'\n"}
+[0.775191] (realsense) StdoutLine: {'line': b'byte-compiling /workspace/farm_car_system/install/realsense/lib/python3.10/site-packages/realsense/camera_parameter.py to camera_parameter.cpython-310.pyc\n'}
+[0.775332] (track) StdoutLine: {'line': b"writing manifest file '../../build/track/track.egg-info/SOURCES.txt'\n"}
+[0.775440] (realsense) StdoutLine: {'line': b'byte-compiling /workspace/farm_car_system/install/realsense/lib/python3.10/site-packages/realsense/paddleorc.py to paddleorc.cpython-310.pyc\n'}
+[0.775566] (track) StdoutLine: {'line': b'running build\n'}
+[0.775640] (track) StdoutLine: {'line': b'running build_py\n'}
+[0.775711] (track) StdoutLine: {'line': b'creating /workspace/farm_car_system/build/track/build\n'}
+[0.775778] (track) StdoutLine: {'line': b'creating /workspace/farm_car_system/build/track/build/lib\n'}
+[0.775844] (track) StdoutLine: {'line': b'creating /workspace/farm_car_system/build/track/build/lib/track\n'}
+[0.775908] (track) StdoutLine: {'line': b'copying track/bytetrack copy.py -> /workspace/farm_car_system/build/track/build/lib/track\n'}
+[0.775973] (track) StdoutLine: {'line': b'copying track/matching.py -> /workspace/farm_car_system/build/track/build/lib/track\n'}
+[0.776114] (track) StdoutLine: {'line': b'copying track/__init__.py -> /workspace/farm_car_system/build/track/build/lib/track\n'}
+[0.776244] (track) StdoutLine: {'line': b'copying track/depth_calculate_person.py -> /workspace/farm_car_system/build/track/build/lib/track\n'}
+[0.776312] (track) StdoutLine: {'line': b'copying track/kalman_filter.py -> /workspace/farm_car_system/build/track/build/lib/track\n'}
+[0.776376] (track) StdoutLine: {'line': b'copying track/recognize.py -> /workspace/farm_car_system/build/track/build/lib/track\n'}
+[0.776404] (track) StdoutLine: {'line': b'copying track/depth.py -> /workspace/farm_car_system/build/track/build/lib/track\n'}
+[0.776429] (track) StdoutLine: {'line': b'copying track/byte_tracker.py -> /workspace/farm_car_system/build/track/build/lib/track\n'}
+[0.776453] (track) StdoutLine: {'line': b'copying track/track_point_sub.py -> /workspace/farm_car_system/build/track/build/lib/track\n'}
+[0.776477] (track) StdoutLine: {'line': b'copying track/detect.py -> /workspace/farm_car_system/build/track/build/lib/track\n'}
+[0.776503] (track) StdoutLine: {'line': b'copying track/byte_old.py -> /workspace/farm_car_system/build/track/build/lib/track\n'}
+[0.776540] (track) StdoutLine: {'line': b'copying track/basetrack.py -> /workspace/farm_car_system/build/track/build/lib/track\n'}
+[0.776564] (track) StdoutLine: {'line': b'copying track/open_rs.py -> /workspace/farm_car_system/build/track/build/lib/track\n'}
+[0.776589] (track) StdoutLine: {'line': b'copying track/test.py -> /workspace/farm_car_system/build/track/build/lib/track\n'}
+[0.776612] (track) StdoutLine: {'line': b'copying track/track.py -> /workspace/farm_car_system/build/track/build/lib/track\n'}
+[0.776635] (track) StdoutLine: {'line': b'copying track/bytetrack.py -> /workspace/farm_car_system/build/track/build/lib/track\n'}
+[0.776659] (track) StdoutLine: {'line': b'copying track/2Dvisual.py -> /workspace/farm_car_system/build/track/build/lib/track\n'}
+[0.776681] (realsense) StdoutLine: {'line': b'byte-compiling /workspace/farm_car_system/install/realsense/lib/python3.10/site-packages/realsense/visiual.py to visiual.cpython-310.pyc\n'}
+[0.776708] (track) StdoutLine: {'line': b'running install\n'}
+[0.776732] (track) StdoutLine: {'line': b'running install_lib\n'}
+[0.776935] (track) StdoutLine: {'line': b'creating /workspace/farm_car_system/install/track/lib/python3.10/site-packages/track\n'}
+[0.776977] (track) StdoutLine: {'line': b'copying /workspace/farm_car_system/build/track/build/lib/track/bytetrack copy.py -> /workspace/farm_car_system/install/track/lib/python3.10/site-packages/track\n'}
+[0.777028] (track) StdoutLine: {'line': b'copying /workspace/farm_car_system/build/track/build/lib/track/matching.py -> /workspace/farm_car_system/install/track/lib/python3.10/site-packages/track\n'}
+[0.777071] (track) StdoutLine: {'line': b'copying /workspace/farm_car_system/build/track/build/lib/track/__init__.py -> /workspace/farm_car_system/install/track/lib/python3.10/site-packages/track\n'}
+[0.777123] (track) StdoutLine: {'line': b'copying /workspace/farm_car_system/build/track/build/lib/track/depth_calculate_person.py -> /workspace/farm_car_system/install/track/lib/python3.10/site-packages/track\n'}
+[0.777151] (track) StdoutLine: {'line': b'copying /workspace/farm_car_system/build/track/build/lib/track/kalman_filter.py -> /workspace/farm_car_system/install/track/lib/python3.10/site-packages/track\n'}
+[0.777207] (track) StdoutLine: {'line': b'copying /workspace/farm_car_system/build/track/build/lib/track/recognize.py -> /workspace/farm_car_system/install/track/lib/python3.10/site-packages/track\n'}
+[0.777235] (track) StdoutLine: {'line': b'copying /workspace/farm_car_system/build/track/build/lib/track/depth.py -> /workspace/farm_car_system/install/track/lib/python3.10/site-packages/track\n'}
+[0.777288] (track) StdoutLine: {'line': b'copying /workspace/farm_car_system/build/track/build/lib/track/byte_tracker.py -> /workspace/farm_car_system/install/track/lib/python3.10/site-packages/track\n'}
+[0.777316] (track) StdoutLine: {'line': b'copying /workspace/farm_car_system/build/track/build/lib/track/track_point_sub.py -> /workspace/farm_car_system/install/track/lib/python3.10/site-packages/track\n'}
+[0.777342] (track) StdoutLine: {'line': b'copying /workspace/farm_car_system/build/track/build/lib/track/detect.py -> /workspace/farm_car_system/install/track/lib/python3.10/site-packages/track\n'}
+[0.777387] (track) StdoutLine: {'line': b'copying /workspace/farm_car_system/build/track/build/lib/track/byte_old.py -> /workspace/farm_car_system/install/track/lib/python3.10/site-packages/track\n'}
+[0.777438] (track) StdoutLine: {'line': b'copying /workspace/farm_car_system/build/track/build/lib/track/basetrack.py -> /workspace/farm_car_system/install/track/lib/python3.10/site-packages/track\n'}
+[0.777467] (track) StdoutLine: {'line': b'copying /workspace/farm_car_system/build/track/build/lib/track/open_rs.py -> /workspace/farm_car_system/install/track/lib/python3.10/site-packages/track\n'}
+[0.777514] (track) StdoutLine: {'line': b'copying /workspace/farm_car_system/build/track/build/lib/track/test.py -> /workspace/farm_car_system/install/track/lib/python3.10/site-packages/track\n'}
+[0.777542] (track) StdoutLine: {'line': b'copying /workspace/farm_car_system/build/track/build/lib/track/track.py -> /workspace/farm_car_system/install/track/lib/python3.10/site-packages/track\n'}
+[0.777593] (track) StdoutLine: {'line': b'copying /workspace/farm_car_system/build/track/build/lib/track/bytetrack.py -> /workspace/farm_car_system/install/track/lib/python3.10/site-packages/track\n'}
+[0.777621] (track) StdoutLine: {'line': b'copying /workspace/farm_car_system/build/track/build/lib/track/2Dvisual.py -> /workspace/farm_car_system/install/track/lib/python3.10/site-packages/track\n'}
+[0.777670] (realsense) StdoutLine: {'line': b'byte-compiling /workspace/farm_car_system/install/realsense/lib/python3.10/site-packages/realsense/color_range.py to color_range.cpython-310.pyc\n'}
+[0.777805] (track) StdoutLine: {'line': b'byte-compiling /workspace/farm_car_system/install/track/lib/python3.10/site-packages/track/bytetrack copy.py to bytetrack copy.cpython-310.pyc\n'}
+[0.778553] (realsense) StdoutLine: {'line': b'byte-compiling /workspace/farm_car_system/install/realsense/lib/python3.10/site-packages/realsense/interface_robot.py to interface_robot.cpython-310.pyc\n'}
+[0.779302] (realsense) StdoutLine: {'line': b'running install_data\n'}
+[0.779424] (realsense) StdoutLine: {'line': b'creating /workspace/farm_car_system/install/realsense/share/ament_index\n'}
+[0.779459] (realsense) StdoutLine: {'line': b'creating /workspace/farm_car_system/install/realsense/share/ament_index/resource_index\n'}
+[0.779489] (realsense) StdoutLine: {'line': b'creating /workspace/farm_car_system/install/realsense/share/ament_index/resource_index/packages\n'}
+[0.779558] (realsense) StdoutLine: {'line': b'copying resource/realsense -> /workspace/farm_car_system/install/realsense/share/ament_index/resource_index/packages\n'}
+[0.779587] (realsense) StdoutLine: {'line': b'copying package.xml -> /workspace/farm_car_system/install/realsense/share/realsense\n'}
+[0.779616] (realsense) StdoutLine: {'line': b'creating /workspace/farm_car_system/install/realsense/share/realsense/launch\n'}
+[0.779659] (realsense) StdoutLine: {'line': b'copying launch/visual_launch.py -> /workspace/farm_car_system/install/realsense/share/realsense/launch\n'}
+[0.779685] (realsense) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.779710] (track) StdoutLine: {'line': b'byte-compiling /workspace/farm_car_system/install/track/lib/python3.10/site-packages/track/matching.py to matching.cpython-310.pyc\n'}
+[0.780227] (track) StdoutLine: {'line': b'byte-compiling /workspace/farm_car_system/install/track/lib/python3.10/site-packages/track/__init__.py to __init__.cpython-310.pyc\n'}
+[0.780286] (track) StdoutLine: {'line': b'byte-compiling /workspace/farm_car_system/install/track/lib/python3.10/site-packages/track/depth_calculate_person.py to depth_calculate_person.cpython-310.pyc\n'}
+[0.780749] (realsense) StdoutLine: {'line': b'Copying ../../build/realsense/realsense.egg-info to /workspace/farm_car_system/install/realsense/lib/python3.10/site-packages/realsense-0.0.1-py3.10.egg-info\n'}
+[0.780803] (track) StdoutLine: {'line': b'byte-compiling /workspace/farm_car_system/install/track/lib/python3.10/site-packages/track/kalman_filter.py to kalman_filter.cpython-310.pyc\n'}
+[0.781057] (realsense) StdoutLine: {'line': b'running install_scripts\n'}
+[0.781341] (track) StdoutLine: {'line': b'byte-compiling /workspace/farm_car_system/install/track/lib/python3.10/site-packages/track/recognize.py to recognize.cpython-310.pyc\n'}
+[0.781596] (track) StdoutLine: {'line': b'byte-compiling /workspace/farm_car_system/install/track/lib/python3.10/site-packages/track/depth.py to depth.cpython-310.pyc\n'}
+[0.781804] (track) StdoutLine: {'line': b'byte-compiling /workspace/farm_car_system/install/track/lib/python3.10/site-packages/track/byte_tracker.py to byte_tracker.cpython-310.pyc\n'}
+[0.783125] (track) StdoutLine: {'line': b'byte-compiling /workspace/farm_car_system/install/track/lib/python3.10/site-packages/track/track_point_sub.py to track_point_sub.cpython-310.pyc\n'}
+[0.783184] (obs_filiter) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.783238] (track) StdoutLine: {'line': b'byte-compiling /workspace/farm_car_system/install/track/lib/python3.10/site-packages/track/detect.py to detect.cpython-310.pyc\n'}
+[0.783357] (track) StdoutLine: {'line': b'byte-compiling /workspace/farm_car_system/install/track/lib/python3.10/site-packages/track/byte_old.py to byte_old.cpython-310.pyc\n'}
+[0.784614] (track) StdoutLine: {'line': b'byte-compiling /workspace/farm_car_system/install/track/lib/python3.10/site-packages/track/basetrack.py to basetrack.cpython-310.pyc\n'}
+[0.784781] (track) StdoutLine: {'line': b'byte-compiling /workspace/farm_car_system/install/track/lib/python3.10/site-packages/track/open_rs.py to open_rs.cpython-310.pyc\n'}
+[0.785260] (track) StdoutLine: {'line': b'byte-compiling /workspace/farm_car_system/install/track/lib/python3.10/site-packages/track/test.py to test.cpython-310.pyc\n'}
+[0.785489] (track) StdoutLine: {'line': b'byte-compiling /workspace/farm_car_system/install/track/lib/python3.10/site-packages/track/track.py to track.cpython-310.pyc\n'}
+[0.786182] (record) StdoutLine: {'line': b'Installing record_node script to /workspace/farm_car_system/install/record/lib/record\n'}
+[0.786398] (record) StdoutLine: {'line': b"writing list of installed files to '/workspace/farm_car_system/build/record/install.log'\n"}
+[0.786529] (track) StdoutLine: {'line': b'byte-compiling /workspace/farm_car_system/install/track/lib/python3.10/site-packages/track/bytetrack.py to bytetrack.cpython-310.pyc\n'}
+[0.787705] (track) StdoutLine: {'line': b'byte-compiling /workspace/farm_car_system/install/track/lib/python3.10/site-packages/track/2Dvisual.py to 2Dvisual.cpython-310.pyc\n'}
+[0.787949] (track) StdoutLine: {'line': b'running install_data\n'}
+[0.788002] (track) StdoutLine: {'line': b'creating /workspace/farm_car_system/install/track/share/ament_index\n'}
+[0.788064] (track) StdoutLine: {'line': b'creating /workspace/farm_car_system/install/track/share/ament_index/resource_index\n'}
+[0.788093] (track) StdoutLine: {'line': b'creating /workspace/farm_car_system/install/track/share/ament_index/resource_index/packages\n'}
+[0.788132] (track) StdoutLine: {'line': b'copying resource/track -> /workspace/farm_car_system/install/track/share/ament_index/resource_index/packages\n'}
+[0.788176] (track) StdoutLine: {'line': b'copying package.xml -> /workspace/farm_car_system/install/track/share/track\n'}
+[0.788206] (track) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.789444] (track) StdoutLine: {'line': b'Copying ../../build/track/track.egg-info to /workspace/farm_car_system/install/track/lib/python3.10/site-packages/track-0.0.0-py3.10.egg-info\n'}
+[0.789850] (track) StdoutLine: {'line': b'running install_scripts\n'}
+[0.794832] (realsense) StdoutLine: {'line': b'Installing 2d_plane script to /workspace/farm_car_system/install/realsense/lib/realsense\n'}
+[0.794998] (realsense) StdoutLine: {'line': b'Installing box_edge_detect script to /workspace/farm_car_system/install/realsense/lib/realsense\n'}
+[0.795056] (realsense) StdoutLine: {'line': b'Installing color_detect script to /workspace/farm_car_system/install/realsense/lib/realsense\n'}
+[0.795117] (realsense) StdoutLine: {'line': b'Installing color_range script to /workspace/farm_car_system/install/realsense/lib/realsense\n'}
+[0.795151] (realsense) StdoutLine: {'line': b'Installing depth_calculate script to /workspace/farm_car_system/install/realsense/lib/realsense\n'}
+[0.795185] (realsense) StdoutLine: {'line': b'Installing paddleorc script to /workspace/farm_car_system/install/realsense/lib/realsense\n'}
+[0.795211] (realsense) StdoutLine: {'line': b'Installing realsense_read script to /workspace/farm_car_system/install/realsense/lib/realsense\n'}
+[0.795235] (realsense) StdoutLine: {'line': b'Installing yolo_number_detect script to /workspace/farm_car_system/install/realsense/lib/realsense\n'}
+[0.795375] (realsense) StdoutLine: {'line': b"writing list of installed files to '/workspace/farm_car_system/build/realsense/install.log'\n"}
+[0.801295] (-) TimerEvent: {}
+[0.804420] (record) CommandEnded: {'returncode': 0}
+[0.804840] (track) StdoutLine: {'line': b'Installing 2Dvisual script to /workspace/farm_car_system/install/track/lib/track\n'}
+[0.804937] (track) StdoutLine: {'line': b'Installing byte_old script to /workspace/farm_car_system/install/track/lib/track\n'}
+[0.804972] (track) StdoutLine: {'line': b'Installing bytetrack script to /workspace/farm_car_system/install/track/lib/track\n'}
+[0.805046] (track) StdoutLine: {'line': b'Installing depth_calculate_person script to /workspace/farm_car_system/install/track/lib/track\n'}
+[0.805078] (track) StdoutLine: {'line': b'Installing open_rs script to /workspace/farm_car_system/install/track/lib/track\n'}
+[0.805105] (track) StdoutLine: {'line': b'Installing test script to /workspace/farm_car_system/install/track/lib/track\n'}
+[0.805132] (track) StdoutLine: {'line': b'Installing track_point_sub script to /workspace/farm_car_system/install/track/lib/track\n'}
+[0.805439] (track) StdoutLine: {'line': b"writing list of installed files to '/workspace/farm_car_system/build/track/install.log'\n"}
+[0.812343] (record) JobEnded: {'identifier': 'record', 'rc': 0}
+[0.814581] (realsense) CommandEnded: {'returncode': 0}
+[0.815716] (obs_filiter) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.818199] (realsense) JobEnded: {'identifier': 'realsense', 'rc': 0}
+[0.825440] (track) CommandEnded: {'returncode': 0}
+[0.825961] (obs_filiter) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.828897] (track) JobEnded: {'identifier': 'track', 'rc': 0}
+[0.889357] (obs_filiter) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.889989] (obs_filiter) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.901390] (-) TimerEvent: {}
+[0.940620] (obs_filiter) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.941330] (obs_filiter) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.981499] (obs_filiter) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.001522] (-) TimerEvent: {}
+[1.004714] (obs_filiter) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[1.014686] (obs_filiter) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.5.4") found components: core imgproc highgui \n'}
+[1.027045] (obs_filiter) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[1.036839] (obs_filiter) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[1.075336] (obs_filiter) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[1.075464] (obs_filiter) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.097513] (obs_filiter) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization \n'}
+[1.101638] (-) TimerEvent: {}
+[1.141009] (obs_filiter) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[1.150372] (obs_filiter) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[1.174515] (obs_filiter) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[1.175623] (obs_filiter) StdoutLine: {'line': b'-- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") \n'}
+[1.175723] (obs_filiter) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[1.201775] (-) TimerEvent: {}
+[1.215421] (obs_filiter) StdoutLine: {'line': b'-- Found OpenNI2: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") \n'}
+[1.215552] (obs_filiter) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[1.215613] (obs_filiter) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to pcap will be disabled\x1b[0m\n'}
+[1.215660] (obs_filiter) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to png will be disabled\x1b[0m\n'}
+[1.242985] (obs_filiter) StdoutLine: {'line': b'-- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  \n'}
+[1.248815] (obs_filiter) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX \n'}
+[1.301914] (-) TimerEvent: {}
+[1.364781] (obs_filiter) StdoutLine: {'line': b'-- Found MPI_C: /usr/lib/x86_64-linux-gnu/libmpi.so (found version "3.1") \n'}
+[1.364912] (obs_filiter) StdoutLine: {'line': b'-- Found MPI: TRUE (found version "3.1") found components: C \n'}
+[1.366791] (obs_filiter) StdoutLine: {'line': b'-- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") \n'}
+[1.371310] (obs_filiter) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") \n'}
+[1.380064] (obs_filiter) StdoutLine: {'line': b'-- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") \n'}
+[1.396113] (obs_filiter) StdoutLine: {'line': b'-- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") \n'}
+[1.402083] (-) TimerEvent: {}
+[1.472336] (obs_filiter) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[1.473072] (obs_filiter) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so\n'}
+[1.502349] (-) TimerEvent: {}
+[1.538543] (obs_filiter) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found\n'}
+[1.538666] (obs_filiter) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[1.588344] (obs_filiter) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[1.588489] (obs_filiter) StdoutLine: {'line': b'-- Looking for connect\n'}
+[1.602449] (-) TimerEvent: {}
+[1.637567] (obs_filiter) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[1.637714] (obs_filiter) StdoutLine: {'line': b'-- Looking for remove\n'}
+[1.690752] (obs_filiter) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[1.690898] (obs_filiter) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[1.702592] (-) TimerEvent: {}
+[1.764533] (obs_filiter) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[1.764666] (obs_filiter) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[1.802725] (-) TimerEvent: {}
+[1.828855] (obs_filiter) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[1.884356] (obs_filiter) StdoutLine: {'line': b'-- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.4.7") \n'}
+[1.886199] (obs_filiter) StdoutLine: {'line': b'-- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  \n'}
+[1.888850] (obs_filiter) StdoutLine: {'line': b'-- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") \n'}
+[1.890525] (obs_filiter) StdoutLine: {'line': b'-- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") \n'}
+[1.902821] (-) TimerEvent: {}
+[1.927012] (obs_filiter) StdoutLine: {'line': b'-- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") \n'}
+[1.929832] (obs_filiter) StdoutLine: {'line': b'-- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  \n'}
+[1.932342] (obs_filiter) StdoutLine: {'line': b'-- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.11.1") \n'}
+[1.936280] (obs_filiter) StdoutLine: {'line': b'-- Found utf8cpp: /usr/include/utf8cpp  \n'}
+[1.962997] (obs_filiter) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.974491] (obs_filiter) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[1.984755] (obs_filiter) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[2.002964] (-) TimerEvent: {}
+[2.035406] (obs_filiter) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[2.035550] (obs_filiter) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[2.103182] (-) TimerEvent: {}
+[2.200481] (obs_filiter) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[2.200777] (obs_filiter) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[2.200951] (obs_filiter) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[2.201242] (obs_filiter) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[2.201308] (obs_filiter) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[2.201770] (obs_filiter) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[2.201829] (obs_filiter) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[2.201955] (obs_filiter) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[2.202066] (obs_filiter) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[2.202437] (obs_filiter) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[2.202502] (obs_filiter) StdoutLine: {'line': b'-- looking for PCL_SAMPLE_CONSENSUS\n'}
+[2.202959] (obs_filiter) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[2.203023] (obs_filiter) StdoutLine: {'line': b'-- looking for PCL_FILTERS\n'}
+[2.203230] (-) TimerEvent: {}
+[2.203373] (obs_filiter) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[2.203482] (obs_filiter) StdoutLine: {'line': b'-- looking for PCL_GEOMETRY\n'}
+[2.203627] (obs_filiter) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[2.203655] (obs_filiter) StdoutLine: {'line': b'-- looking for PCL_2D\n'}
+[2.203748] (obs_filiter) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[2.203794] (obs_filiter) StdoutLine: {'line': b'-- looking for PCL_FEATURES\n'}
+[2.204239] (obs_filiter) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[2.204314] (obs_filiter) StdoutLine: {'line': b'-- looking for PCL_ML\n'}
+[2.204775] (obs_filiter) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[2.204821] (obs_filiter) StdoutLine: {'line': b'-- looking for PCL_SEGMENTATION\n'}
+[2.205209] (obs_filiter) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[2.205599] (obs_filiter) StdoutLine: {'line': b'-- Found PCL: pcl_common;pcl_octree;pcl_io;pcl_kdtree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_features;pcl_ml;pcl_segmentation;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt;FLANN::FLANN  \n'}
+[2.206911] (obs_filiter) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[2.228454] (obs_filiter) StdoutLine: {'line': b'-- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)\n'}
+[2.303360] (-) TimerEvent: {}
+[2.403647] (-) TimerEvent: {}
+[2.449960] (obs_filiter) StdoutLine: {'line': b'-- Found OpenMP_C: -fopenmp (found version "4.5") \n'}
+[2.503793] (-) TimerEvent: {}
+[2.521981] (obs_filiter) StdoutLine: {'line': b'-- Found OpenMP_CXX: -fopenmp (found version "4.5") \n'}
+[2.522111] (obs_filiter) StdoutLine: {'line': b'-- Found OpenMP: TRUE (found version "4.5")  \n'}
+[2.580369] (obs_filiter) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.603942] (-) TimerEvent: {}
+[2.638394] (obs_filiter) StdoutLine: {'line': b'-- Generating done\n'}
+[2.648059] (obs_filiter) StdoutLine: {'line': b'-- Build files have been written to: /workspace/farm_car_system/build/obs_filiter\n'}
+[2.657614] (obs_filiter) CommandEnded: {'returncode': 0}
+[2.658189] (obs_filiter) JobProgress: {'identifier': 'obs_filiter', 'progress': 'build'}
+[2.658895] (obs_filiter) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/farm_car_system/build/obs_filiter', '--', '-j20', '-l20'], 'cwd': '/workspace/farm_car_system/build/obs_filiter', 'env': OrderedDict([('LIBRARY_PATH', '/usr/local/cuda/lib64/stubs'), ('NV_LIBCUBLAS_VERSION', '12.1.0.26-1'), ('NV_NVPROF_DEV_PACKAGE', 'cuda-nvprof-12-1=12.1.55-1'), ('NV_CUDA_COMPAT_PACKAGE', 'cuda-compat-12-1'), ('NV_CUDA_NSIGHT_COMPUTE_VERSION', '12.1.0-1'), ('HOSTNAME', 'darkdemon-ASUS-TUF-Gaming-F17-FX707ZC4-FX707ZC4'), ('NVIDIA_CUDA_END_OF_LIFE', '1'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('NV_LIBNCCL_PACKAGE_VERSION', '2.17.1-1'), ('HOME', '/home/work'), ('OLDPWD', '/workspace'), ('NV_CUDNN_PACKAGE_NAME', 'libcudnn8'), ('NV_LIBCUBLAS_DEV_VERSION', '12.1.0.26-1'), ('ROS_PYTHON_VERSION', '3'), ('NV_LIBNCCL_DEV_PACKAGE_VERSION', '2.17.1-1'), ('NV_LIBNPP_PACKAGE', 'libnpp-12-1=12.0.2.50-1'), ('NV_CUDNN_PACKAGE', 'libcudnn8=8.9.0.131-1+cuda12.1'), ('CUDA_VERSION', '12.1.0'), ('NV_NVPROF_VERSION', '12.1.55-1'), ('ROS_DISTRO', 'humble'), ('NV_LIBCUBLAS_PACKAGE_NAME', 'libcublas-12-1'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=12.1 brand=tesla,driver>=470,driver<471 brand=unknown,driver>=470,driver<471 brand=nvidia,driver>=470,driver<471 brand=nvidiartx,driver>=470,driver<471 brand=geforce,driver>=470,driver<471 brand=geforcertx,driver>=470,driver<471 brand=quadro,driver>=470,driver<471 brand=quadrortx,driver>=470,driver<471 brand=titan,driver>=470,driver<471 brand=titanrtx,driver>=470,driver<471 brand=tesla,driver>=525,driver<526 brand=unknown,driver>=525,driver<526 brand=nvidia,driver>=525,driver<526 brand=nvidiartx,driver>=525,driver<526 brand=geforce,driver>=525,driver<526 brand=geforcertx,driver>=525,driver<526 brand=quadro,driver>=525,driver<526 brand=quadrortx,driver>=525,driver<526 brand=titan,driver>=525,driver<526 brand=titanrtx,driver>=525,driver<526'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NV_LIBCUSPARSE_VERSION', '12.0.2.55-1'), ('NVIDIA_DRIVER_CAPABILITIES', 'compute,utility'), ('NV_CUDA_LIB_VERSION', '12.1.0-1'), ('NV_LIBNCCL_PACKAGE_NAME', 'libnccl2'), ('NV_NVML_DEV_VERSION', '12.1.55-1'), ('NV_LIBNPP_DEV_PACKAGE', 'libnpp-dev-12-1=12.0.2.50-1'), ('TERM', 'xterm'), ('NV_CUDA_CUDART_VERSION', '12.1.55-1'), ('NV_CUDNN_PACKAGE_DEV', 'libcudnn8-dev=8.9.0.131-1+cuda12.1'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('NV_LIBCUBLAS_DEV_PACKAGE_NAME', 'libcublas-dev-12-1'), ('NV_LIBCUBLAS_PACKAGE', 'libcublas-12-1=12.1.0.26-1'), ('NVARCH', 'x86_64'), ('NV_LIBNCCL_DEV_PACKAGE_NAME', 'libnccl-dev'), ('NV_LIBCUSPARSE_DEV_VERSION', '12.0.2.55-1'), ('DISPLAY', ':1'), ('NV_LIBNCCL_PACKAGE', 'libnccl2=2.17.1-1+cuda12.1'), ('NVIDIA_PRODUCT_NAME', 'CUDA'), ('LANG', 'C.UTF-8'), ('NV_CUDA_CUDART_DEV_VERSION', '12.1.55-1'), ('XAUTHORITY', '/root/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('NV_LIBCUBLAS_DEV_PACKAGE', 'libcublas-dev-12-1=12.1.0.26-1'), ('NV_CUDA_NSIGHT_COMPUTE_DEV_PACKAGE', 'cuda-nsight-compute-12-1=12.1.0-1'), ('NV_LIBNCCL_DEV_PACKAGE', 'libnccl-dev=2.17.1-1+cuda12.1'), ('NV_NVTX_VERSION', '12.1.66-1'), ('NV_LIBNPP_VERSION', '12.0.2.50-1'), ('NV_CUDNN_VERSION', '8.9.0.131'), ('PWD', '/workspace/farm_car_system/build/obs_filiter'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('NCCL_VERSION', '2.17.1-1'), ('COLCON', '1'), ('NV_LIBNPP_DEV_VERSION', '12.0.2.50-1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.694953] (obs_filiter) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/xz_visualizer_node.dir/src/xz_visualizer_node.cpp.o\x1b[0m\n'}
+[2.695626] (obs_filiter) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/obstacle_node.dir/src/obstacle_detector.cpp.o\x1b[0m\n'}
+[2.695698] (obs_filiter) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/plane_node.dir/src/plane.cpp.o\x1b[0m\n'}
+[2.696514] (obs_filiter) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/realsense_read_node.dir/src/realsense_read.cpp.o\x1b[0m\n'}
+[2.704079] (-) TimerEvent: {}
+[2.804344] (-) TimerEvent: {}
+[2.904618] (-) TimerEvent: {}
+[3.005028] (-) TimerEvent: {}
+[3.105367] (-) TimerEvent: {}
+[3.205624] (-) TimerEvent: {}
+[3.305924] (-) TimerEvent: {}
+[3.406279] (-) TimerEvent: {}
+[3.506554] (-) TimerEvent: {}
+[3.606996] (-) TimerEvent: {}
+[3.707277] (-) TimerEvent: {}
+[3.807554] (-) TimerEvent: {}
+[3.907864] (-) TimerEvent: {}
+[4.008133] (-) TimerEvent: {}
+[4.108452] (-) TimerEvent: {}
+[4.208890] (-) TimerEvent: {}
+[4.309188] (-) TimerEvent: {}
+[4.409485] (-) TimerEvent: {}
+[4.509750] (-) TimerEvent: {}
+[4.610143] (-) TimerEvent: {}
+[4.710583] (-) TimerEvent: {}
+[4.810897] (-) TimerEvent: {}
+[4.911197] (-) TimerEvent: {}
+[5.011487] (-) TimerEvent: {}
+[5.111824] (-) TimerEvent: {}
+[5.212095] (-) TimerEvent: {}
+[5.312530] (-) TimerEvent: {}
+[5.412851] (-) TimerEvent: {}
+[5.513253] (-) TimerEvent: {}
+[5.613652] (-) TimerEvent: {}
+[5.714027] (-) TimerEvent: {}
+[5.814322] (-) TimerEvent: {}
+[5.914623] (-) TimerEvent: {}
+[6.014897] (-) TimerEvent: {}
+[6.115228] (-) TimerEvent: {}
+[6.215495] (-) TimerEvent: {}
+[6.315815] (-) TimerEvent: {}
+[6.416087] (-) TimerEvent: {}
+[6.516434] (-) TimerEvent: {}
+[6.616710] (-) TimerEvent: {}
+[6.716986] (-) TimerEvent: {}
+[6.817264] (-) TimerEvent: {}
+[6.917514] (-) TimerEvent: {}
+[7.017800] (-) TimerEvent: {}
+[7.118064] (-) TimerEvent: {}
+[7.218316] (-) TimerEvent: {}
+[7.318559] (-) TimerEvent: {}
+[7.418933] (-) TimerEvent: {}
+[7.519339] (-) TimerEvent: {}
+[7.619655] (-) TimerEvent: {}
+[7.719929] (-) TimerEvent: {}
+[7.820394] (-) TimerEvent: {}
+[7.920679] (-) TimerEvent: {}
+[7.982571] (obs_filiter) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX executable realsense_read_node\x1b[0m\n'}
+[8.020809] (-) TimerEvent: {}
+[8.121080] (-) TimerEvent: {}
+[8.221365] (-) TimerEvent: {}
+[8.321730] (-) TimerEvent: {}
+[8.422024] (-) TimerEvent: {}
+[8.522311] (-) TimerEvent: {}
+[8.552480] (obs_filiter) StdoutLine: {'line': b'[ 62%] Built target realsense_read_node\n'}
+[8.622527] (-) TimerEvent: {}
+[8.722806] (-) TimerEvent: {}
+[8.823080] (-) TimerEvent: {}
+[8.923328] (-) TimerEvent: {}
+[9.023729] (-) TimerEvent: {}
+[9.124011] (-) TimerEvent: {}
+[9.224209] (-) TimerEvent: {}
+[9.324569] (-) TimerEvent: {}
+[9.424909] (-) TimerEvent: {}
+[9.525172] (-) TimerEvent: {}
+[9.625527] (-) TimerEvent: {}
+[9.725804] (-) TimerEvent: {}
+[9.826062] (-) TimerEvent: {}
+[9.926404] (-) TimerEvent: {}
+[10.026751] (-) TimerEvent: {}
+[10.127034] (-) TimerEvent: {}
+[10.227330] (-) TimerEvent: {}
+[10.327661] (-) TimerEvent: {}
+[10.427959] (-) TimerEvent: {}
+[10.528295] (-) TimerEvent: {}
+[10.628574] (-) TimerEvent: {}
+[10.728826] (-) TimerEvent: {}
+[10.829119] (-) TimerEvent: {}
+[10.929383] (-) TimerEvent: {}
+[11.029683] (-) TimerEvent: {}
+[11.129942] (-) TimerEvent: {}
+[11.230215] (-) TimerEvent: {}
+[11.330487] (-) TimerEvent: {}
+[11.430784] (-) TimerEvent: {}
+[11.531047] (-) TimerEvent: {}
+[11.631284] (-) TimerEvent: {}
+[11.731568] (-) TimerEvent: {}
+[11.831847] (-) TimerEvent: {}
+[11.932115] (-) TimerEvent: {}
+[12.032401] (-) TimerEvent: {}
+[12.132682] (-) TimerEvent: {}
+[12.232956] (-) TimerEvent: {}
+[12.333217] (-) TimerEvent: {}
+[12.433733] (-) TimerEvent: {}
+[12.533993] (-) TimerEvent: {}
+[12.634286] (-) TimerEvent: {}
+[12.734562] (-) TimerEvent: {}
+[12.834827] (-) TimerEvent: {}
+[12.935111] (-) TimerEvent: {}
+[13.029500] (obs_filiter) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable xz_visualizer_node\x1b[0m\n'}
+[13.035210] (-) TimerEvent: {}
+[13.135474] (-) TimerEvent: {}
+[13.235801] (-) TimerEvent: {}
+[13.336102] (-) TimerEvent: {}
+[13.436526] (-) TimerEvent: {}
+[13.483488] (obs_filiter) StdoutLine: {'line': b'[ 75%] Built target xz_visualizer_node\n'}
+[13.536629] (-) TimerEvent: {}
+[13.633637] (obs_filiter) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking CXX executable plane_node\x1b[0m\n'}
+[13.636735] (-) TimerEvent: {}
+[13.736973] (-) TimerEvent: {}
+[13.837371] (-) TimerEvent: {}
+[13.937623] (-) TimerEvent: {}
+[14.037914] (-) TimerEvent: {}
+[14.138304] (-) TimerEvent: {}
+[14.238610] (-) TimerEvent: {}
+[14.305419] (obs_filiter) StdoutLine: {'line': b'[ 87%] Built target plane_node\n'}
+[14.338744] (-) TimerEvent: {}
+[14.439001] (-) TimerEvent: {}
+[14.539304] (-) TimerEvent: {}
+[14.639572] (-) TimerEvent: {}
+[14.739839] (-) TimerEvent: {}
+[14.840202] (-) TimerEvent: {}
+[14.940597] (-) TimerEvent: {}
+[15.040886] (-) TimerEvent: {}
+[15.141314] (-) TimerEvent: {}
+[15.241568] (-) TimerEvent: {}
+[15.341818] (-) TimerEvent: {}
+[15.442123] (-) TimerEvent: {}
+[15.542380] (-) TimerEvent: {}
+[15.642628] (-) TimerEvent: {}
+[15.742959] (-) TimerEvent: {}
+[15.843344] (-) TimerEvent: {}
+[15.943624] (-) TimerEvent: {}
+[16.044035] (-) TimerEvent: {}
+[16.144305] (-) TimerEvent: {}
+[16.244564] (-) TimerEvent: {}
+[16.344876] (-) TimerEvent: {}
+[16.445226] (-) TimerEvent: {}
+[16.545689] (-) TimerEvent: {}
+[16.646027] (-) TimerEvent: {}
+[16.746321] (-) TimerEvent: {}
+[16.846688] (-) TimerEvent: {}
+[16.947042] (-) TimerEvent: {}
+[17.047434] (-) TimerEvent: {}
+[17.147769] (-) TimerEvent: {}
+[17.248094] (-) TimerEvent: {}
+[17.348347] (-) TimerEvent: {}
+[17.448796] (-) TimerEvent: {}
+[17.549370] (-) TimerEvent: {}
+[17.649857] (-) TimerEvent: {}
+[17.750204] (-) TimerEvent: {}
+[17.850492] (-) TimerEvent: {}
+[17.950856] (-) TimerEvent: {}
+[18.051222] (-) TimerEvent: {}
+[18.151610] (-) TimerEvent: {}
+[18.233087] (obs_filiter) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable obstacle_node\x1b[0m\n'}
+[18.251743] (-) TimerEvent: {}
+[18.352084] (-) TimerEvent: {}
+[18.452433] (-) TimerEvent: {}
+[18.552786] (-) TimerEvent: {}
+[18.592986] (obs_filiter) StdoutLine: {'line': b'[100%] Built target obstacle_node\n'}
+[18.605316] (obs_filiter) CommandEnded: {'returncode': 0}
+[18.605720] (obs_filiter) JobProgress: {'identifier': 'obs_filiter', 'progress': 'install'}
+[18.611102] (obs_filiter) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/farm_car_system/build/obs_filiter'], 'cwd': '/workspace/farm_car_system/build/obs_filiter', 'env': OrderedDict([('LIBRARY_PATH', '/usr/local/cuda/lib64/stubs'), ('NV_LIBCUBLAS_VERSION', '12.1.0.26-1'), ('NV_NVPROF_DEV_PACKAGE', 'cuda-nvprof-12-1=12.1.55-1'), ('NV_CUDA_COMPAT_PACKAGE', 'cuda-compat-12-1'), ('NV_CUDA_NSIGHT_COMPUTE_VERSION', '12.1.0-1'), ('HOSTNAME', 'darkdemon-ASUS-TUF-Gaming-F17-FX707ZC4-FX707ZC4'), ('NVIDIA_CUDA_END_OF_LIFE', '1'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('NV_LIBNCCL_PACKAGE_VERSION', '2.17.1-1'), ('HOME', '/home/work'), ('OLDPWD', '/workspace'), ('NV_CUDNN_PACKAGE_NAME', 'libcudnn8'), ('NV_LIBCUBLAS_DEV_VERSION', '12.1.0.26-1'), ('ROS_PYTHON_VERSION', '3'), ('NV_LIBNCCL_DEV_PACKAGE_VERSION', '2.17.1-1'), ('NV_LIBNPP_PACKAGE', 'libnpp-12-1=12.0.2.50-1'), ('NV_CUDNN_PACKAGE', 'libcudnn8=8.9.0.131-1+cuda12.1'), ('CUDA_VERSION', '12.1.0'), ('NV_NVPROF_VERSION', '12.1.55-1'), ('ROS_DISTRO', 'humble'), ('NV_LIBCUBLAS_PACKAGE_NAME', 'libcublas-12-1'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=12.1 brand=tesla,driver>=470,driver<471 brand=unknown,driver>=470,driver<471 brand=nvidia,driver>=470,driver<471 brand=nvidiartx,driver>=470,driver<471 brand=geforce,driver>=470,driver<471 brand=geforcertx,driver>=470,driver<471 brand=quadro,driver>=470,driver<471 brand=quadrortx,driver>=470,driver<471 brand=titan,driver>=470,driver<471 brand=titanrtx,driver>=470,driver<471 brand=tesla,driver>=525,driver<526 brand=unknown,driver>=525,driver<526 brand=nvidia,driver>=525,driver<526 brand=nvidiartx,driver>=525,driver<526 brand=geforce,driver>=525,driver<526 brand=geforcertx,driver>=525,driver<526 brand=quadro,driver>=525,driver<526 brand=quadrortx,driver>=525,driver<526 brand=titan,driver>=525,driver<526 brand=titanrtx,driver>=525,driver<526'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NV_LIBCUSPARSE_VERSION', '12.0.2.55-1'), ('NVIDIA_DRIVER_CAPABILITIES', 'compute,utility'), ('NV_CUDA_LIB_VERSION', '12.1.0-1'), ('NV_LIBNCCL_PACKAGE_NAME', 'libnccl2'), ('NV_NVML_DEV_VERSION', '12.1.55-1'), ('NV_LIBNPP_DEV_PACKAGE', 'libnpp-dev-12-1=12.0.2.50-1'), ('TERM', 'xterm'), ('NV_CUDA_CUDART_VERSION', '12.1.55-1'), ('NV_CUDNN_PACKAGE_DEV', 'libcudnn8-dev=8.9.0.131-1+cuda12.1'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('NV_LIBCUBLAS_DEV_PACKAGE_NAME', 'libcublas-dev-12-1'), ('NV_LIBCUBLAS_PACKAGE', 'libcublas-12-1=12.1.0.26-1'), ('NVARCH', 'x86_64'), ('NV_LIBNCCL_DEV_PACKAGE_NAME', 'libnccl-dev'), ('NV_LIBCUSPARSE_DEV_VERSION', '12.0.2.55-1'), ('DISPLAY', ':1'), ('NV_LIBNCCL_PACKAGE', 'libnccl2=2.17.1-1+cuda12.1'), ('NVIDIA_PRODUCT_NAME', 'CUDA'), ('LANG', 'C.UTF-8'), ('NV_CUDA_CUDART_DEV_VERSION', '12.1.55-1'), ('XAUTHORITY', '/root/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('NV_LIBCUBLAS_DEV_PACKAGE', 'libcublas-dev-12-1=12.1.0.26-1'), ('NV_CUDA_NSIGHT_COMPUTE_DEV_PACKAGE', 'cuda-nsight-compute-12-1=12.1.0-1'), ('NV_LIBNCCL_DEV_PACKAGE', 'libnccl-dev=2.17.1-1+cuda12.1'), ('NV_NVTX_VERSION', '12.1.66-1'), ('NV_LIBNPP_VERSION', '12.0.2.50-1'), ('NV_CUDNN_VERSION', '8.9.0.131'), ('PWD', '/workspace/farm_car_system/build/obs_filiter'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('NCCL_VERSION', '2.17.1-1'), ('COLCON', '1'), ('NV_LIBNPP_DEV_VERSION', '12.0.2.50-1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[18.616036] (obs_filiter) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[18.616133] (obs_filiter) StdoutLine: {'line': b'-- Installing: /workspace/farm_car_system/install/obs_filiter/lib/obs_filiter/realsense_read_node\n'}
+[18.616443] (obs_filiter) StdoutLine: {'line': b'-- Set runtime path of "/workspace/farm_car_system/install/obs_filiter/lib/obs_filiter/realsense_read_node" to ""\n'}
+[18.616507] (obs_filiter) StdoutLine: {'line': b'-- Installing: /workspace/farm_car_system/install/obs_filiter/lib/obs_filiter/plane_node\n'}
+[18.616920] (obs_filiter) StdoutLine: {'line': b'-- Set runtime path of "/workspace/farm_car_system/install/obs_filiter/lib/obs_filiter/plane_node" to ""\n'}
+[18.616947] (obs_filiter) StdoutLine: {'line': b'-- Installing: /workspace/farm_car_system/install/obs_filiter/lib/obs_filiter/obstacle_node\n'}
+[18.617683] (obs_filiter) StdoutLine: {'line': b'-- Set runtime path of "/workspace/farm_car_system/install/obs_filiter/lib/obs_filiter/obstacle_node" to ""\n'}
+[18.617746] (obs_filiter) StdoutLine: {'line': b'-- Installing: /workspace/farm_car_system/install/obs_filiter/lib/obs_filiter/xz_visualizer_node\n'}
+[18.618254] (obs_filiter) StdoutLine: {'line': b'-- Set runtime path of "/workspace/farm_car_system/install/obs_filiter/lib/obs_filiter/xz_visualizer_node" to ""\n'}
+[18.618292] (obs_filiter) StdoutLine: {'line': b'-- Installing: /workspace/farm_car_system/install/obs_filiter/include/obs_filiter\n'}
+[18.618341] (obs_filiter) StdoutLine: {'line': b'-- Installing: /workspace/farm_car_system/install/obs_filiter/include/obs_filiter/obs_filiter\n'}
+[18.618389] (obs_filiter) StdoutLine: {'line': b'-- Installing: /workspace/farm_car_system/install/obs_filiter/include/obs_filiter/obs_filiter/visualization.hpp\n'}
+[18.618431] (obs_filiter) StdoutLine: {'line': b'-- Installing: /workspace/farm_car_system/install/obs_filiter/include/obs_filiter/obs_filiter/plane_estimator.hpp\n'}
+[18.618460] (obs_filiter) StdoutLine: {'line': b'-- Installing: /workspace/farm_car_system/install/obs_filiter/include/obs_filiter/obs_filiter/obstacle_detector.hpp\n'}
+[18.618484] (obs_filiter) StdoutLine: {'line': b'-- Installing: /workspace/farm_car_system/install/obs_filiter/share/obs_filiter//launch\n'}
+[18.618548] (obs_filiter) StdoutLine: {'line': b'-- Installing: /workspace/farm_car_system/install/obs_filiter/share/obs_filiter//launch/obs_filiter_launch.py\n'}
+[18.618576] (obs_filiter) StdoutLine: {'line': b'-- Installing: /workspace/farm_car_system/install/obs_filiter/share/ament_index/resource_index/package_run_dependencies/obs_filiter\n'}
+[18.618670] (obs_filiter) StdoutLine: {'line': b'-- Installing: /workspace/farm_car_system/install/obs_filiter/share/ament_index/resource_index/parent_prefix_path/obs_filiter\n'}
+[18.618697] (obs_filiter) StdoutLine: {'line': b'-- Installing: /workspace/farm_car_system/install/obs_filiter/share/obs_filiter/environment/ament_prefix_path.sh\n'}
+[18.618721] (obs_filiter) StdoutLine: {'line': b'-- Installing: /workspace/farm_car_system/install/obs_filiter/share/obs_filiter/environment/ament_prefix_path.dsv\n'}
+[18.618744] (obs_filiter) StdoutLine: {'line': b'-- Installing: /workspace/farm_car_system/install/obs_filiter/share/obs_filiter/environment/path.sh\n'}
+[18.618768] (obs_filiter) StdoutLine: {'line': b'-- Installing: /workspace/farm_car_system/install/obs_filiter/share/obs_filiter/environment/path.dsv\n'}
+[18.618820] (obs_filiter) StdoutLine: {'line': b'-- Installing: /workspace/farm_car_system/install/obs_filiter/share/obs_filiter/local_setup.bash\n'}
+[18.618845] (obs_filiter) StdoutLine: {'line': b'-- Installing: /workspace/farm_car_system/install/obs_filiter/share/obs_filiter/local_setup.sh\n'}
+[18.618870] (obs_filiter) StdoutLine: {'line': b'-- Installing: /workspace/farm_car_system/install/obs_filiter/share/obs_filiter/local_setup.zsh\n'}
+[18.618918] (obs_filiter) StdoutLine: {'line': b'-- Installing: /workspace/farm_car_system/install/obs_filiter/share/obs_filiter/local_setup.dsv\n'}
+[18.618941] (obs_filiter) StdoutLine: {'line': b'-- Installing: /workspace/farm_car_system/install/obs_filiter/share/obs_filiter/package.dsv\n'}
+[18.618963] (obs_filiter) StdoutLine: {'line': b'-- Installing: /workspace/farm_car_system/install/obs_filiter/share/ament_index/resource_index/packages/obs_filiter\n'}
+[18.618985] (obs_filiter) StdoutLine: {'line': b'-- Installing: /workspace/farm_car_system/install/obs_filiter/share/obs_filiter/cmake/obs_filiterConfig.cmake\n'}
+[18.619006] (obs_filiter) StdoutLine: {'line': b'-- Installing: /workspace/farm_car_system/install/obs_filiter/share/obs_filiter/cmake/obs_filiterConfig-version.cmake\n'}
+[18.619028] (obs_filiter) StdoutLine: {'line': b'-- Installing: /workspace/farm_car_system/install/obs_filiter/share/obs_filiter/package.xml\n'}
+[18.620050] (obs_filiter) CommandEnded: {'returncode': 0}
+[18.629796] (obs_filiter) JobEnded: {'identifier': 'obs_filiter', 'rc': 0}
+[18.630439] (-) EventReactorShutdown: {}

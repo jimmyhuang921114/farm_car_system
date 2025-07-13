@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>obs_filiter</name>
+  <version>0.1.0</version>
+  <description>3D Obstacle Detection using RealSense and PCL</description>
+
+  <maintainer email="your@email.com">Your Name</maintainer>
+  <license>Apache-2.0</license>
+
+  <!-- 建置工具 -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- 主要依賴 -->
+  <depend>rclcpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>pcl_conversions</depend>
+  <depend>pcl_msgs</depend>
+
+  <!-- 系統函式庫 -->
+  <exec_depend>libopencv-dev</exec_depend>
+  <exec_depend>libpcl-dev</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
